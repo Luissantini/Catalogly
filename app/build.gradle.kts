@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.santini.catalogly"
-    compileSdk = 35 // Te sugiero usar 35 o 34 por ahora para mayor estabilidad en 2026
+    compileSdk = 36 // Te sugiero usar 35 o 34 por ahora para mayor estabilidad en 2026
 
     defaultConfig {
         applicationId = "com.santini.catalogly"
@@ -60,7 +60,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
-
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.coil.compose)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -68,4 +69,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+
+
 }
